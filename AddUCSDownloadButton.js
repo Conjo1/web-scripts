@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Add UCS download button
 // @namespace    http://ucs.piugame.com/
-// @version      0.1
+// @version      1.0
 // @description  Adds download button on UCS site
 // @author       Conjo
 // @match        https://ucs.piugame.com/ucs_share?wr_id=*
@@ -14,7 +14,7 @@
 
     function addDownloadButton() {
         const buttons = document.querySelector(".btn_wrap > div:nth-child(1)");
-        const downloadButton = buttons.children[1].cloneNode(true);
+        const downloadButton = buttons.lastElementChild.cloneNode(true);
         const downloadURL = new URL("https://ucs.piugame.com/ucs_player/file.php");
         const qstrings = new URLSearchParams(window.location.search)
 
