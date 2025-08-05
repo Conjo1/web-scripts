@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Add UCS download button
 // @namespace    http://ucs.piugame.com/
-// @version      1.0
+// @version      1.1
 // @description  Adds download button on UCS site
 // @author       Conjo
-// @match        https://ucs.piugame.com/ucs_share?wr_id=*
-// @match        https://ucs.piugame.com/bbs/board.php?bo_table=ucs_share&wr_id=*
+// @match        https://ucs.piugame.com/ucs_share?*wr_id=*
+// @match        https://ucs.piugame.com/bbs/board.php?*wr_id=*
 // @grant        none
 // ==/UserScript==
 
